@@ -1,0 +1,22 @@
+body {
+    font-family:Arial;
+    font-size:12px;
+}
+
+#container {
+    width:640px;
+    margin:auto;
+    margin-top:50px;
+}
+
+#picturebox {
+    clear:both;
+}
+
+#previous {
+    float:left;
+}
+
+#next {
+    float:right;
+}
