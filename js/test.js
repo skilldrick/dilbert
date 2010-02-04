@@ -16,7 +16,6 @@ Make it work without JavaScript (needs some cURL)
 
 $(document).ready(function () {
     setListeners();
-    goForward();
 });
 
 function getNext(current, previous) {
@@ -34,12 +33,12 @@ function getNext(current, previous) {
 }
 
     function setListeners() {
-	$('#next').submit(function () {
+	$('#next').click(function () {
 	    goForward();
 	    return false;
 	});
 
-	$('#previous').submit(function () {
+	$('#previous').click(function () {
 	    goBackward();
 	    return false;
 	});
