@@ -1,3 +1,12 @@
+/*
+NEXT STEPS:
+
+Make the whole thing work without JavaScript
+Make it work in Firefox
+Click on image to go to next
+
+ */
+
 $(document).ready(function () {
     getNext(33190);
 });
