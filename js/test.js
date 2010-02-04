@@ -16,7 +16,9 @@ $(document).ready(function () {
 });
 
 function getNext(current, previous) {
-    var getURL = 'http://www.skilldrick.co.uk/dilbert/inc/process.php';
+    var basedir = document.location.href
+    basedir = basedir.substring(0, basedir.lastIndexOf('/') + 1);
+    var getURL = basedir + 'inc/process.php';
     getURL += '?strip=' + current;
     if(previous) {
 	getURL += '&previous=1';
