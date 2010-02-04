@@ -24,7 +24,10 @@
       </form>
 
       <div id='picturebox'>
-	
+	<?php
+							  $strip = (int) $_GET['strip'];
+							  ?>
+	<img rel='<?php echo $strip; ?>' />
       </div>
       <?php
    /*
