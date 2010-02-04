@@ -1,13 +1,9 @@
 /*
 NEXT STEPS:
 
-Make the whole thing work without JavaScript
-Make it work in Firefox
 Click on image to go to next
 
-
 Preload next image
-Make it work without JavaScript (needs some cURL)
 
 
 

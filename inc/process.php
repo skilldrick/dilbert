@@ -11,8 +11,15 @@ do {
     $strip--;
   }
 
+  $temp = $strip;
+  $tenthousands = floor($temp / 10000) * 10000;
+  $temp -= $tenthousands;
+  $thousands = floor($temp / 1000) * 1000;
+  $temp -= $thousands;
+  $hundreds = floor($temp / 100) * 100;
+
   $url = "http://www.dilbert.com/dyn/str_strip/000000000/00000000/0000000/"
-    . "000000/30000/3000/100/$strip/$strip.strip.gif";
+    . "000000/$tenthousands/$thousands/$hundreds/$strip/$strip.strip.gif";
 
   $fail = true;
   if(getimagesize($url)) {
